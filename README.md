@@ -1,8 +1,5 @@
 # mdadm-Linear-Device
-An implementation of the Linear Device functionality in mdadm for JBOD with caching and network support.
-PLEASE NOTE: I do not own the tester, trace files, JBOD object files, JBOD Server or utility files. These were provided to me, as the focus of this project was actually implementation of mdadm, the cache, and network. 
-
-The following were implemented by myself: mdadm.c, cache.c, and net.c
+An implementation of the Linear Device functionality in mdadm for JBOD with caching and networking.
 
 mdadm.c is a layer above JBOD. Given the device driver for JBOD, with a list of commands such as mount/unmount JBOD, disk/block seeking, and read/write (you can find these commands in JBOD.h), mdadm.c implements the device driver functions for JBOD as a Linear Device.
 
